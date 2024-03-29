@@ -1,0 +1,33 @@
+//CREATE OPERATION
+use student1 
+db.createCollection("student1")
+//INSERTONE OPERATION
+db.student1.insertOne({
+  name: "aamina",
+  age: "19",
+  roll_no: "221"
+})
+//INSERTMANY OPERATION
+db.student1.insertMany([
+  {
+    name: "aamina",
+    age: "19",
+    roll_no: "221"},
+  {
+    name: "priyanka",
+    age: "19",
+    roll_no: "222"},
+  {
+    name: "karishma",
+    age: "20",
+    roll_no: "223"}
+])
+//READ OPERATION
+db.student1.find()
+//READONE OPERATION
+db.student1.findOne({name: "aamina"})
+//UPDATE OPERATION
+db.student1.updateOne({name: "priyanka"}, {$set: {age: "21"}})
+//DELETE OPERATION
+db.student1.deleteOne({name: "aamina"})
+db.student1.find()

@@ -1,0 +1,92 @@
+PRACTICAL 8
+Q.1) Write a dart program to show Multilevel Inheritance.
+CODE :
+class Bird {
+  void fly()
+  {
+    print("The Bird can fly.");
+  }
+}
+
+class Parrot extends Bird {
+  void speak(){
+    print("The Parrot can speak.");
+  }
+}
+
+class Eagle extends Parrot {
+  void vision(){
+    print("The Eagle has a sharp vision.");
+  }
+}
+
+void main(){
+  Eagle e = new Eagle();
+  e.speak();
+  e.fly();
+  e.vision();
+}
+Q.2) Write a dart program to show Hierarchical Inheritance.
+CODE :
+class Person {
+  void dispName(String name){
+    print(name);
+  }
+  
+  void dispAge(int age) {
+    print(age);
+  }
+ }
+
+class Peter extends Person {
+  
+  void dispBranch(String nationality) {
+    print(nationality);
+  }
+}
+
+//Derived class created from another derived class.
+class James extends Person {
+  void result(String result){
+    print(result);
+  }
+}
+
+void main() {
+  // Creating Object of James class
+  James j = new James();
+  j.dispName("James :");
+  j.dispAge(24);
+  j.result("Passed");
+  
+  // Creating Object of Peter class
+  Peter p = new Peter();
+  p.dispName("Peter :");
+  p.dispAge(21);
+  p.dispBranch("Computer Science");
+}
+Q.3) Write a dart program to implement Abstract class.
+CODE :
+abstract class Person {
+  void displayInfo();
+}
+
+class Boy extends Person {
+  void displayInfo(){
+    print("My name is Jonathon.");
+  }
+}
+
+class Girl extends Person {
+  void displayInfo(){
+    print("My name is Grecia.");
+  }
+}
+
+void main(){
+  Boy b = new Boy();
+  Girl g = new Girl();
+  b.displayInfo();
+  g.displayInfo();
+}
+

@@ -1,5 +1,23 @@
 PRACTICAL 8
-Q.1) Write a dart program to show Multilevel Inheritance.
+1)Write a dart program to implement single level inheritance.
+CODE :
+class Bird{
+  void fly()
+  {
+    print("The bird can fly");
+  }
+}
+class Parot extends Bird{
+  void speak(){
+    print("The Parot can speak");
+}
+}
+void main(){
+  Parot p=new Parot();
+  p.speak();
+  p.fly();
+}
+2) Write a dart program to show Multilevel Inheritance.
 CODE :
 class Bird {
   void fly()
@@ -26,7 +44,7 @@ void main(){
   e.fly();
   e.vision();
 }
-Q.2) Write a dart program to show Hierarchical Inheritance.
+3) Write a dart program to show Hierarchical Inheritance.
 CODE :
 class Person {
   void dispName(String name){
@@ -65,7 +83,7 @@ void main() {
   p.dispAge(21);
   p.dispBranch("Computer Science");
 }
-Q.3) Write a dart program to implement Abstract class.
+4) Write a dart program to implement Abstract class.
 CODE :
 abstract class Person {
   void displayInfo();
@@ -89,4 +107,3 @@ void main(){
   b.displayInfo();
   g.displayInfo();
 }
-

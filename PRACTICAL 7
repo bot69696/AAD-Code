@@ -100,24 +100,3 @@ void main() {
   emp.name = "employee1";
   emp.result(); //function call
 }
-9)Write a dart program to implement single level inheritance.
-CODE :
-class Bird{
-  void fly()
-  {
-    print("The bird can fly");
-  }
-}
-class Parot extends Bird{
-  void speak(){
-    print("The Parot can speak");
-}
-}
-void main(){
-  Parot p=new Parot();
-  p.speak();
-  p.fly();
-}
-
-
-

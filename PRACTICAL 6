@@ -1,0 +1,21 @@
+AIM : Create a simple "Hello World" project using AngularJS and apply ng-controller etc:
+CODE : 
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+  <title>Hello World Project</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+</head>
+
+<body>
+  <h1 ng-controller="HelloWorldCtrl">{{message}}</h1>
+
+  <script>
+    angular.module("app", []).controller("HelloWorldCtrl", function($scope) {
+      $scope.message = "Hello World";
+    });
+  </script>
+</body>
+
+</html>

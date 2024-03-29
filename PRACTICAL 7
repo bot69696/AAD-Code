@@ -1,0 +1,123 @@
+1)	Write a program with dart to display message "welcome to the world of dart programming".
+CODE : 
+void main() {
+  print("welcome to the world of dart programming");
+  print("I'm using DartPad Online compiler.");
+}
+2) Write a dart program to create a variable and display the value of it.
+CODE :
+void main(){
+  final a=12;
+  const pi=3.14;
+  print(a);
+  print(pi);
+}
+3) Write a dart program to create a list and display it.
+CODE :
+void main(){
+ var list=[1,2,3,4,5];
+  print(list);
+}
+4) Write a dart program to create a map and display it.
+CODE :
+void main(){
+ var mapping={'id':1,'name':'Dart'};
+ print(mapping);
+}
+5) Write a dart program to print number which is divided by 2 from 1 to 10.
+CODE :
+void main(){
+ for(var i=1;i<=10;i++){
+   if(i%2==0){
+   print(i);
+ }
+ }
+}
+6) Write a dart program to create function to add two values and print it.
+CODE : 
+// Arithmetic Operation
+void main(){
+add(100,50);
+}
+void add(int a,int b){
+  int c, d, e, g;
+  c = a+b;
+  print("The Addition of $a and $b is : $c");
+  d = a-b;
+  print("The Subtraction of $a and $b is : $d");
+  e = a*b;
+  print("The Multiplication of $a and $b is : $e");
+  double f;
+  f = a/b;
+  print("The Division of $a and $b is : $f");
+  g = a%b;
+  print("Modulus : $g");
+}
+7) // Relational operators OR Comparison operators
+CODE :
+void main() {
+  int a = 10;
+  int b = 5;
+
+  bool isEqual = a==b;
+  print('Is $a equal to $b : $isEqual');
+
+  bool isNotEqual = a!=b;
+  print('Is $a not equal to $b : $isNotEqual');
+
+  bool isGreaterThan = a>b;
+  print('$a is greater than $b : $isGreaterThan');
+
+  bool isLessThan = a<b;
+  print('$a is less than $b : $isLessThan');
+
+  bool isGreaterOrEqual = a>=b;
+  print('$a is greater than or equal to $b : $isGreaterOrEqual');
+
+  bool isLessOrEqual = a<=b;
+  print('$a is less than or equal to $b : $isLessOrEqual');
+}
+8) Write a dart program to create to implement getter and setter with the class.
+CODE :
+class Employee {
+  String name = "";
+  //getting method
+  String get emp_name {
+    return name;
+  }
+  //setter method
+  void set emp_name(String name) {
+    this.name = name;
+  }
+  //function definition
+  void result() {
+    print(name);
+  }
+}
+void main() {
+  //object creation
+  Employee emp = new Employee();
+  emp.name = "employee1";
+  emp.result(); //function call
+}
+9)Write a dart program to implement single level inheritance.
+CODE :
+class Bird{
+  void fly()
+  {
+    print("The bird can fly");
+  }
+}
+class Parot extends Bird{
+  void speak(){
+    print("The Parot can speak");
+}
+}
+void main(){
+  Parot p=new Parot();
+  p.speak();
+  p.fly();
+}
+
+
+

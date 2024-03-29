@@ -1,59 +1,137 @@
-1)	Write a program with dart to display message "welcome to the world of dart programming".
-CODE : 
-void main() {
-  print("welcome to the world of dart programming");
-  print("I'm using DartPad Online compiler.");
-}
-2) Write a dart program to create a variable and display the value of it.
-CODE :
+Aim1. Print hello world with void main
+CODE:
 void main(){
-  final a=12;
+   print("main is the entry point!");
+   print("hello world");
+ }
+Aim2. write a dart program to make the use of comment
+CODE:
+ int main(){
+   var lst=[1,2,3];
+   //single line comment
+   /*
+    * it prints
+    * the whole list
+    * at once
+     */
+   print(lst);
+   return 0;
+ }
+Aim 3. write a dart program to documentation comment (triple line comment).
+CODE:
+ int main(){
+   var lst=[1,2,3];
+       /// it print the whole list
+    /// at once
+   print(lst);
+   return 0;
+ }
+Aim 4. write a dart program to create a variable and display it.
+CODE:
+void main() {
+   var a=12;
   const pi=3.14;
   print(a);
-  print(pi);
+   print(pi); 
 }
-3) Write a dart program to create a list and display it.
-CODE :
-void main(){
- var list=[1,2,3,4,5];
+Aim 5. Datatypes in dart.
+CODE:
+void main() {
+   int num1=2;
+  double num2=1.5;
+  print (num1);
+  print(num2);
+  var a1=num.parse("1");
+  var b1=num.parse("2.34");
+  var c1=a1+b1;
+  print("Product = ${c1}");
+}
+Aim 6. write a dart program to create a list and display it.
+CODE:
+void main() {
+  var list=[1,2,3,4];
   print(list);
 }
-4) Write a dart program to create a map and display it.
-CODE :
-void main(){
- var mapping={'id':1,'name':'Dart'};
- print(mapping);
+Aim 7. WAP to create mapping and display.
+CODE:
+void main() {
+  var mapping={"id":37,'name':'shraddha'};
+  print(mapping);
 }
-5) Write a dart program to print number which is divided by 2 from 1 to 10.
-CODE :
-void main(){
- for(var i=1;i<=10;i++){
-   if(i%2==0){
-   print(i);
- }
- }
-}
-6) Write a dart program to create function to add two values and print it.
-CODE : 
-// Arithmetic Operation
-void main(){
-add(100,50);
+Aim 8. write a dart program to print even no. with for loop(range between 1-10) OR number divisible by 2.
+CODE:
+void main() {
+  for (int i = 1;i<=10;i++){
+    if(i%2==0){
+      print(i);
+    }
+  }
+  }
+Aim 9:WAP to add two variables using function.
+CODE:
+void main() {
+  add(3,4);
 }
 void add(int a,int b){
-  int c, d, e, g;
-  c = a+b;
-  print("The Addition of $a and $b is : $c");
-  d = a-b;
-  print("The Subtraction of $a and $b is : $d");
-  e = a*b;
-  print("The Multiplication of $a and $b is : $e");
-  double f;
-  f = a/b;
-  print("The Division of $a and $b is : $f");
-  g = a%b;
-  print("Modulus : $g");
+  int c;
+  c=a+b;
+  print(c);
+  }
+Aim 10. write a dart program to demonstrate assignment operator.
+CODE:
+void main() {
+  // Assignment operators
+  double a = 5;
+  double b = 3;
+
+  // = (Assignment)
+  double result = a + b;
+  print("Result after '=' operator: $result");
+
+  // += (Add and assign)
+  result += 2;
+  print("Result after '+=' operator: $result");
+
+  // -= (Subtract and assign)
+  result -= 1;
+  print("Result after '-=' operator: $result");
+
+  // *= (Multiply and assign)
+  result *= 3;
+  print("Result after '*=' operator: $result");
+
+  // /= (Divide and assign)
+  result /= 2;
+  print("Result after '/=' operator: $result");
+
+  // %= (Remainder and assign)
+  result %= 4;
+  print("Result after '%=' operator: $result");
 }
-7) // Relational operators OR Comparison operators
+Aim 11. Write a dart program to implement getter and setter.
+Code:
+class Employee {
+  String name = "";
+  //getting method
+  String get empname {
+    return name;
+  }
+  //setter method
+  void set empname(String name) {
+    this.name = name;
+  }
+  //function definition
+  void result() {
+    print(name);
+  }
+}
+void main() {
+  //object creation
+  Employee emp = new Employee();
+  emp.name = "employee1";
+  emp.result(); //function call
+}
+Aim 12. Demonstrate Relational operators OR Comparison operators.
 CODE :
 void main() {
   int a = 10;
@@ -77,26 +155,27 @@ void main() {
   bool isLessOrEqual = a<=b;
   print('$a is less than or equal to $b : $isLessOrEqual');
 }
-8) Write a dart program to create to implement getter and setter with the class.
-CODE :
-class Employee {
-  String name = "";
-  //getting method
-  String get emp_name {
-    return name;
-  }
-  //setter method
-  void set emp_name(String name) {
-    this.name = name;
-  }
-  //function definition
-  void result() {
-    print(name);
-  }
+Aim 13. Write a dart program to create function to add two values and print it.
+CODE : 
+// Arithmetic Operation
+void main(){
+add(100,50);
 }
-void main() {
-  //object creation
-  Employee emp = new Employee();
-  emp.name = "employee1";
-  emp.result(); //function call
+void add(int a,int b){
+  int c, d, e, g;
+  c = a+b;
+  print("The Addition of $a and $b is : $c");
+  d = a-b;
+  print("The Subtraction of $a and $b is : $d");
+  e = a*b;
+  print("The Multiplication of $a and $b is : $e");
+  double f;
+  f = a/b;
+  print("The Division of $a and $b is : $f");
+  g = a%b;
+  print("Modulus : $g");
 }
+
+
+
+
